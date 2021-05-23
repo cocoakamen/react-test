@@ -5,6 +5,8 @@ import AppButtonFileInput from "./AppButtonFileInput";
 import MenuDropDown from "./MenuDropdown";
 import Modal from './Modal';
 
+import JsonDataAjax from './JsonDataAjax';
+
 function App() {
   // Modal用
   const [showModal, setShowModal] = useState(false);
@@ -18,6 +20,9 @@ function App() {
     alert('ボタンを' + ( nextStatus ? '無効' : '有効') + 'にするよ！');
     setDisableGroupButton(nextStatus);
   }
+
+  const urlParameter = location.search.slice(1) ;
+
 
   return (
     <div>
@@ -68,6 +73,17 @@ function App() {
         <Modal show={showModal} setShow={setShowModal}></Modal>
       </p>
 
+      <h5>urlパラメータで指定したJSONファイルをAjaxで取得</h5>
+      <p>
+      <a href="./index.html?items1">items1</a> / 
+      <a href="./index.html?items2"> items2</a> /
+      <a href="./index.html?error"> error</a>
+      </p>
+
+      <p>
+        <JsonDataAjax fileName={urlParameter + '.json'}></JsonDataAjax>
+      </p>
+      
     </div>
   );
 };
