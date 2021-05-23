@@ -1,0 +1,56 @@
+
+@keyframes fadeIN {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.app-menu-dropdown-rapper{
+  display:inline-block;
+}
+
+.app-menu-dropdown-trigger{
+  cursor: pointer;
+  background-color:$menu-list-background-color;
+  color:$menu-list-color;
+  transition: .4s;
+  display:inline-block;
+}
+
+.app-menu-dropdown-trigger:hover{
+  color:$menu-list-hover-color;
+}
+
+.app-menu-dropdown{
+  animation-name: fadeIN;
+  animation-duration: 0.4s;
+  position:fixed;
+  display:flex;
+  background-color: none;
+  z-index:100;
+}
+
+.app-menu-dropdown-list{
+  position: relative;
+  top:-2.8em;
+  background-color:$menu-list-background-color;
+  border-radius: 0.2em;
+  padding: 0em;
+  padding-top: 0.2em;
+  box-shadow: 0 0.2em 0.3em 0 rgba(0, 0, 0, .5);
+}
+
+.app-menu-item{
+  background-color:$menu-list-background-color;
+  color: $menu-list-color;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  transition: 0.4s;
+}
+
+.app-menu-item:hover{
+  background-color:$menu-list-hover-background-color;
+}

@@ -1,0 +1,37 @@
+.app-button {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  margin:0 0.2em;
+  text-decoration: none;
+  color: #FFF;
+  background: $button-color;
+  transition: .4s;
+  cursor: pointer;
+  box-shadow: 0 0.2em 0.3em 0 rgba(0, 0, 0, .5);
+  border-radius: 0.2em;
+}
+
+.app-button:hover {
+  background: $button-hover-color;
+  box-shadow: none;
+}
+
+.app-button-disable{
+  @extend .app-button;
+  background-color: $button-disable-color;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+.app-button-file-input{
+  @extend .app-button;
+  line-height: 1.5;
+  padding:0.5em;
+}
+
+.app-button-file-input input{
+  display:none;
+}
+

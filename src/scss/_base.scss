@@ -1,0 +1,20 @@
+// 1. Colors
+// ==========================================================================
+
+$primary-color:#ef6c00;
+$primary-color-lite: #ffe0b2;
+
+
+$button-color:  $primary-color;
+$button-hover-color: $primary-color-lite;
+$button-disable-color: #bdbdbd ;
+
+$menu-list-background-color: white;
+$menu-list-hover-background-color: $primary-color-lite;
+$menu-list-color: $primary-color;
+$menu-list-hover-color:$primary-color-lite;
+
+$modal-close-background-color: $primary-color;
+$modal-close-color: white;
+$modal-close-hover-background-color: $primary-color-lite;
+$modal-close-hover-color:$primary-color;
