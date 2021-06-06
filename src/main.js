@@ -26,6 +26,8 @@ function App() {
 
   return (
     <div>
+      <h5>ツールチップ</h5>
+      <span class="app-tooltip" data-tooltip="ツールチップの内容">マウスホバーでツールチップを表示</span>
       <h5>ボタン</h5>
       <p>
         <AppButton buttonName="ボタン"></AppButton>

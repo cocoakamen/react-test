@@ -7,7 +7,7 @@ export default function AppButton(props) {
     );
   } else {
     return (
-      <a className="app-button" onClick={props.onClick}>{props.buttonName}</a>
+      <a className="app-button app-tooltip" data-tooltip="ツールチップ" onClick={props.onClick}>{props.buttonName}</a>
     );  
   }
 };
